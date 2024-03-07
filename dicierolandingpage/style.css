@@ -1,0 +1,344 @@
+.menu-bar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.menu-bar.scrolled {
+  background-color: #bdbdbd !important; /* Altere para uma cor mais clara */
+}
+
+
+.menu-bar li {
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.menu-bar li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s;
+  border-radius: 25px;
+}
+.menu-bar li:hover {
+  color: black;
+}
+.menu-bar li:hover::before {
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+}
+
+
+body {
+  background: url('assets/img/background.jpg');
+  background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
+  background-position: center; /* Centraliza a imagem na tela */
+  background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+  background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
+  margin: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif; /* Defina a fonte globalmente */
+}
+
+
+.fa{
+  margin-right: 15px;
+  color: #2ecc71; /* Cor verde para o ícone */
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Distância do fundo da página */
+  right: 20px; /* Distância da borda direita da página */
+  z-index: 999; /* Garante que o ícone fique acima de outros elementos */
+  width: 60px;
+}
+
+
+.footer-columns {
+  background-color: #000000e4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  bottom: 0;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+
+
+.footer-icons {
+    display: flex;
+    margin-top: 4rem;
+	  margin-right: 1rem;
+    display: block !important;
+}
+
+.footer-icons a {
+    margin-right: 1rem;
+}
+
+.footer-company-name{
+  border-style: none;
+  height: 3rem !important;
+  margin-left: 1rem;
+}
+
+.fale-conosco{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    font-size: medium
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.services section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Alteração aqui */
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 20rem;
+  max-width: 100%;
+}
+
+
+.services-card{
+  margin-top: 0 !important;
+  user-select:none;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Alinha os elementos filhos verticalmente */
+  flex-direction: column; /* Define a direção dos elementos filhos como coluna */
+  text-align: center;
+  align-items: center;
+  flex: 1 1 calc(33.33% - 2rem); /* Distribuindo os cartões em 3 colunas com margem */
+  max-width: 300px; /* Reduzindo a largura máxima */
+  margin-right: 1rem;
+  margin-bottom: 5rem;
+  border: 1px solid #ffffff22;
+  background-color: #000000;
+  background: linear-gradient(227deg, #008000 0%, rgba(17, 0, 32, .5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: .5s all;
+  hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #88888855;
+    margin-top: 0;
+  }
+  ins{
+    text-decoration: none;
+  }
+  .main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo horizontalmente */
+    justify-content: center; /* Alinha o conteúdo verticalmente */
+    text-align: center;
+    width: 90%;
+    padding: 1rem;
+    .tokenImage{
+      border-radius: .5rem;
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+      align-items: center;
+      justify-content: center;
+    }
+    .description{
+      margin: .5rem 0;
+      color: #351795;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Adicione reticências para indicar texto truncado */
+    }
+    .tokenInfo{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price{
+        display: flex;
+        align-items: center;
+        color: #ee83e5;
+        font-weight: 700;
+        ins{
+          margin-left: -.3rem;
+          margin-right: .5rem;
+        }
+      }
+      .duration{
+        display: flex;
+        align-items: center;
+        color: #0a041e;
+        margin-right: .2rem;
+        ins{
+          margin: .5rem;
+          margin-bottom: .4rem;
+        }
+      }
+    }
+    .creator{
+      display: flex;
+      align-items: center;
+      margin-top: .2rem;
+      margin-bottom: -.3rem;
+      ins{
+        color: #a89ec9;
+        text-decoration: none;
+      }
+      .wrapper{
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffffff22;
+        padding: .3rem;
+        margin: 0;
+        margin-right: .5rem;
+        border-radius: 100%;
+        box-shadow: inset 0 0 0 4px #000000aa;
+        img{
+          border-radius: 100%;
+          border: 1px solid #ffffff22;
+          width: 2rem;
+          height: 2rem;
+          object-fit: cover;
+          margin: 0;
+        }
+      }
+    }
+  }
+  ::before{
+    position: fixed;
+    content: "";
+    box-shadow: 0 0 100px 40px #ffffff08;
+    top: -10%;
+    left: -100%;
+    transform: rotate(-45deg);
+    height: 60rem;
+    transition: .7s all;
+  }
+  &:hover{
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+    filter: brightness(1.3);
+    ::before{
+      filter: brightness(.5);
+      top: -100%;
+      left: 200%;
+    }
+  }
+}
+
+.bg{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1{
+    font-size: 20rem;
+    filter: opacity(0.5);
+  }
+}
+
+.services section > .services-card:hover {
+  border: 1px solid #7d141444;
+  box-shadow: 0 7px 50px 10px #961b1baa;
+  transform: scale(1.015);
+  filter: brightness(1.3);
+}
+
+.services section > .services-card:hover::before {
+  filter: brightness(0.5);
+  top: -100%;
+  left: 200%;
+}
+
+
+.services-card h2 {
+  font-size: 2rem;
+}
+
+.services-card {
+  cursor: pointer; /* Mostra o cursor como um ponteiro ao passar por cima */
+  margin-bottom: 20px; /* Espaçamento entre os cartões de serviço */
+}
+
+.modal{
+  background-color: rgba(101, 86, 86, 0.9); /* Define a transparência */
+  border-radius: 4px;
+}
+
+.modal .modal-content {
+  font-family: 'Fredoka One', sans-serif; /* Escolhe a fonte Fredoka One */
+  color: #fff; /* Define a cor do texto como branco */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  width: auto;
+  height: 40rem;
+}
+
+.modal .modal-content h2 {
+  font-size: 2em; /* Define o tamanho da fonte do título */
+  margin-bottom: 20px; /* Adiciona um espaço entre o título e o texto */
+}
+
+.modal .modal-content p {
+  font-size: 1.0em; /* Define o tamanho da fonte do texto */
+  line-height: 1.5; /* Define o espaçamento entre as linhas do texto */
+}
