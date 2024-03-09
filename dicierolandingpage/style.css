@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   margin-top: 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.336);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 .menu-bar.scrolled {
-  background-color: #bdbdbd !important; /* Altere para uma cor mais clara */
+  background-color: #130707 !important; /* Altere para uma cor mais clara */
 }
 
 
@@ -66,7 +66,6 @@ body {
   background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
   margin: 0;
   width: 100%;
-  font-family: 'Open Sans', sans-serif; /* Defina a fonte globalmente */
 }
 
 
@@ -74,14 +73,6 @@ body {
   margin-right: 15px;
   color: #2ecc71; /* Cor verde para o ícone */
 }
-
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-}
-
 
 
 .whatsapp-icon {
@@ -101,8 +92,10 @@ body {
   align-items: center;
   width: 100%;
   backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  position: fixed;
   bottom: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(7px);
 }
 
 .footer-column {
@@ -160,20 +153,20 @@ code {
   user-select:none;
   flex: 1;
   display: flex;
+  font-family: sans-serif;
   justify-content: center; /* Alinha os elementos filhos verticalmente */
   flex-direction: column; /* Define a direção dos elementos filhos como coluna */
   text-align: center;
   align-items: center;
-  flex: 1 1 calc(33.33% - 2rem); /* Distribuindo os cartões em 3 colunas com margem */
   max-width: 300px; /* Reduzindo a largura máxima */
   margin-right: 1rem;
   margin-bottom: 5rem;
   border: 1px solid #ffffff22;
-  background-color: #000000;
-  background: linear-gradient(227deg, #008000 0%, rgba(17, 0, 32, .5) 100%);
+  background-color: #0a0101;
+  background: linear-gradient(227deg, #ce1b1b00 0%, rgba(135, 136, 0, 0.29) 100%);
   box-shadow: 0 7px 20px 5px #00000088;
   border-radius: .7rem;
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(7px);
   overflow: hidden;
   transition: .5s all;
@@ -193,7 +186,7 @@ code {
     align-items: center; /* Alinha o conteúdo horizontalmente */
     justify-content: center; /* Alinha o conteúdo verticalmente */
     text-align: center;
-    width: 90%;
+    width: 85%;
     padding: 1rem;
     .tokenImage{
       border-radius: .5rem;
@@ -208,6 +201,7 @@ code {
       color: #351795;
       overflow: hidden;
       text-overflow: ellipsis; /* Adicione reticências para indicar texto truncado */
+      font-family: sans-serif;
     }
     .tokenInfo{
       display: flex;
@@ -318,27 +312,109 @@ code {
 .services-card {
   cursor: pointer; /* Mostra o cursor como um ponteiro ao passar por cima */
   margin-bottom: 20px; /* Espaçamento entre os cartões de serviço */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-.modal{
-  background-color: rgba(101, 86, 86, 0.9); /* Define a transparência */
-  border-radius: 4px;
+.modal {
+  position: fixed;
+  background-color: rgb(149 197 168 / 82%);
+  z-index: 1000;
+  border-radius: 10px;
 }
 
-.modal .modal-content {
-  font-family: 'Fredoka One', sans-serif; /* Escolhe a fonte Fredoka One */
-  color: #fff; /* Define a cor do texto como branco */
-  text-align: center; /* Centraliza o texto horizontalmente */
-  width: auto;
-  height: 40rem;
+
+.menu-sanfona > li {
+  list-style: none;
+  font-size: 18px;
+  font-family: Mulish;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: -17px -20px 10px rgb(4 0 0 / 11%);
 }
 
-.modal .modal-content h2 {
-  font-size: 2em; /* Define o tamanho da fonte do título */
-  margin-bottom: 20px; /* Adiciona um espaço entre o título e o texto */
+.menu-sanfona li ul { display: none; } /* Esconde todos os submenus por padrão */
+.menu-sanfona li.ativo ul { display: block; } /* Exibe o submenu quando o item do menu estiver ativo */
+.menu-sanfona li.ativo i.fa-plus { display: none; } /* Esconde o ícone de adição quando o item do menu estiver ativo */
+.menu-sanfona li.ativo i.fa-minus { display: inline; } /* Exibe o ícone de subtração quando o item do menu estiver ativo */
+
+.menu-sanfona li ul{
+  display:none;
+  text-align: start;
 }
 
-.modal .modal-content p {
-  font-size: 1.0em; /* Define o tamanho da fonte do texto */
-  line-height: 1.5; /* Define o espaçamento entre as linhas do texto */
+.menu-sanfona li:focus ul{
+  display:block;
+}
+
+.menu-sanfona {
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+  overflow: hidden; /* Adiciona overflow hidden para esconder a sombra extra */
+}
+
+
+.menu-sanfona p {
+  font-size: 1rem;
+}
+
+
+.menu-sanfona h2 {
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  position: relative; /* Adiciona posição relativa para z-index funcionar */
+  z-index: 1; /* Coloca o texto sobre a borda */
+}
+
+
+.menu-sanfona ul li {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #130202;
+  cursor: pointer;
+  position: relative; /* Adiciona posição relativa para z-index funcionar */
+  z-index: 1; /* Coloca o texto sobre a borda */
+}
+
+.menu-sanfona ul li:hover {
+  background-color: #718b5234; /* Cor de fundo do item ao passar o mouse */
+}
+
+.menu-sanfona li {
+  position: relative; /* Posição relativa para permitir posicionamento absoluto dos pseudoelementos */
+  
+}
+
+
+.menu-sanfona li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* Cor da borda (estilo de vidro) */
+}
+
+.menu-sanfona-menu-principal{
+  border-bottom: 1px solid;
+}
+
+.menu-item ul {
+  display: none;
+}
+
+.menu-item.expanded ul {
+  display: block;
 }
