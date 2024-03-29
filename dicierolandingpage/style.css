@@ -295,13 +295,6 @@ body {
   width: 60px;
 }
 
-.footer{
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 0;
-  width: 100%;
-}
-
 
 .footer-columns {
   background-color: #000000e4;
@@ -312,10 +305,7 @@ body {
   width: 100%;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  position: relative; /* Alterado de fixed para relative */
   margin-top: auto; /* Isso empurra o rodapé para a parte inferior */
-  bottom: 0; /* Coloca o rodapé no final da tela */
-  left: 0; /* Alinha o rodapé à esquerda */
 }
 
 

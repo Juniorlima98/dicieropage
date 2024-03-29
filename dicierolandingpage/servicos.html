@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
     <div class="container">
         <section>
             <ul class="menu-bar">
@@ -437,9 +437,9 @@
             </div>
         </div>
     </div>
-     <!--rodapé-->
-     <div>
-        <section style="margin-top: auto;">
+    <!--rodapé-->
+    <div>
+        <section style="margin-top: auto; position: absolute; width: 100%; bottom: 0px;">
             <div class="footer-columns">
                 <div class="footer-column">
                     <p class="footer-links">
@@ -485,13 +485,10 @@
             </div> 
         </section>   
     </div>  
-    <a href="https://api.whatsapp.com/send?phone=SEUNUMERO">
-        <img class="whatsapp-icon" src="assets/img/whatsapp_PNG20.png" alt="WhatsApp Icon">
-    </a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+        <a href="https://api.whatsapp.com/send?phone=SEUNUMERO"> <img class="whatsapp-icon" src="assets/img/whatsapp_PNG20.png" alt="WhatsApp Icon"> </a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.modal').modal();
