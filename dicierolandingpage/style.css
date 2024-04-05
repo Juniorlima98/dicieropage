@@ -11,7 +11,7 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 25px;
-  width: 90%;
+  width: 80%;
   position: fixed;
   top: 0;
   left: 50%;
@@ -87,6 +87,7 @@
 .manifesto{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
 }
 
 
@@ -715,17 +716,66 @@ code {
 
 .contato-relevo {
   position: absolute;
-  top:45%; /* Ajuste conforme necessário */
+  top:55%; /* Ajuste conforme necessário */
   left: 76%; /* Ajuste conforme necessário */
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-  padding: 20px;
+  padding: 35px;
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
   z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
   width: 50%; /* Defina a largura desejada */
   max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
   height: auto; /* Ou defina uma altura fixa se necessário */
-  margin-top: 20px; /* Ajuste conforme necessário */
+  margin-top: 20px; 
 }
 
+@media screen and (min-width: 1920px) {
+  .contato-relevo {
+    position: absolute;
+    top:39%; 
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
+    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
+    width: 50%; /* Defina a largura desejada */
+    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
+  }
+}
+
+
+
+.botao-entenda {
+  margin-left: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+
+.custom-button {
+  border-radius: 50px;
+  color: rgb(120, 155, 69);
+  border: 0;
+  transition: background-color 0.3s;
+  background-color: white;
+  padding: 15px 70px 40px;
+  font-size: 18px;
+}
+
+
+@media screen and (min-width: 1920px){
+  .botao-entenda {
+    margin-left: 13rem;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
