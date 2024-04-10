@@ -231,6 +231,8 @@
   margin-right: 3rem;
   letter-spacing: 0;
 }
+
+
 .principais-clientes{
   background-color: rgba(8, 0, 0, 0.425); /* Cor de fundo semi-transparente */
   -webkit-backdrop-filter: blur(10px); /* Efeito de desfoque do fundo */
@@ -261,7 +263,8 @@
   background-color: rgba(255, 255, 255, 0.767);
   margin-top: 12rem; 
   padding: 1rem;  
-  margin-right: 2rem !important;
+  margin-right: 1rem;
+  margin-left: 1rem;
   backdrop-filter: blur(4px); 
   -webkit-backdrop-filter: blur(7px);
 }
@@ -275,6 +278,7 @@ padding-top: 4rem;
 padding-bottom: 4rem;
 margin: 0rem 2rem 4rem 2rem;
 border-radius: 0 0 10px 10px;
+font-weight: bolder;
 }
 
 .menu-bar li {
@@ -716,20 +720,26 @@ code {
 	left: 0;
 	top: 0;
 }
+
 .slide-track {
-  animation: scroll 80s linear infinite; 
+  animation: scroll 80s linear infinite;
   display: flex;
-  width: calc(250px * 11); 
 }
+
 .slide {
-	height: 100px;
+  height: 100px;
+  background-color: white; /* Definindo o fundo branco */
+  flex-shrink: 0; /* Evita que os slides diminuam para caber no contêiner */
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 11)); } 
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 11));
+  }
 }
-
 
 @media (min-height: 1400px) {
   .services {
@@ -746,8 +756,8 @@ code {
 
 .contato-relevo {
   position: absolute;
-  top:55%; /* Ajuste conforme necessário */
-  left: 76%; /* Ajuste conforme necessário */
+  top:45%; /* Ajuste conforme necessário */
+  left: 78%; /* Ajuste conforme necessário */
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
   padding: 35px;
@@ -756,8 +766,6 @@ code {
   z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
   width: 50%; /* Defina a largura desejada */
   max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-  height: auto; /* Ou defina uma altura fixa se necessário */
-  margin-top: 20px; 
 }
 
 @media screen and (min-width: 1920px) {
@@ -781,11 +789,15 @@ code {
 
 
 .botao-entenda {
-  margin-left: 6rem;
+  margin-left: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+
+.custom-button:hover{
+  background-color: green;
 }
 
 
@@ -802,10 +814,13 @@ code {
 
 @media screen and (min-width: 1920px){
   .botao-entenda {
-    margin-left: 13rem;
+    margin-left: 20rem;
     display: flex;
     margin-top: 3rem;
     justify-content: center;
     align-items: center;
   }
 }
+
+
+
