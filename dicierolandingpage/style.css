@@ -119,6 +119,24 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   font-weight: 600;
+  margin-right: 2rem;
+  margin-top: 10rem !important;
+  background-color: rgba(255, 255, 255, 0.897);
+  margin-top: 6rem;
+  padding-left: 5rem; 
+  margin-left: 2rem; 
+  padding-right: 49rem; 
+  padding-bottom: 3rem; 
+  padding-top: 3rem;
+}
+
+
+@media screen and (max-width: 900px) {
+  .manifesto{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+  }
 }
 
 
@@ -257,17 +275,19 @@
   border-radius: 10px;
 }
 
-
-
 .clientes-principais{
   background-color: rgba(255, 255, 255, 0.767);
   margin-top: 12rem; 
   padding: 1rem;  
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   margin-left: 1rem;
   backdrop-filter: blur(4px); 
   -webkit-backdrop-filter: blur(7px);
 }
+
+
+
+
 
 
 .conheca-nossos-servicos {
@@ -756,7 +776,7 @@ code {
 
 .contato-relevo {
   position: absolute;
-  top:45%; /* Ajuste conforme necessário */
+  top:40%; /* Ajuste conforme necessário */
   left: 78%; /* Ajuste conforme necessário */
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -787,6 +807,21 @@ code {
 }
 
 
+@media screen and (max-width: 768px) {
+  .contato-relevo {
+    position: relative; /* Mude para posição relativa para manter o fluxo normal do documento */
+    top: auto; /* Remova o posicionamento superior absoluto */
+    left: auto; /* Remova o posicionamento esquerdo absoluto */
+    transform: none; /* Remova a transformação */
+    margin: 0 auto; /* Centralize horizontalmente */
+    width: 90%; /* Defina a largura desejada */
+    max-width: 100%; /* Defina a largura máxima para preencher o contêiner pai */
+    padding: 20px; /* Ajuste conforme necessário */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
+    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
+  }
+}
 
 .botao-entenda {
   margin-left: 9rem;
