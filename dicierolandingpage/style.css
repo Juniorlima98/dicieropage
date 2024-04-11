@@ -167,6 +167,38 @@
   letter-spacing: 0px;
 }
 
+
+@media (min-width: 1800px) {
+  .alexandre-foto {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .vitor-foto {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 30rem;
+  }
+}
+
+
+@media (min-width: 1800px) {
+  .lucio-foto {
+    width: 30rem;
+  }
+}
+
+
+@media (min-width: 1800px) {
+  .cris-foto {
+    width: 30rem;
+  }
+}
+
+
 .alexandre-diciero::before {
   position: fixed;
   content: "";
