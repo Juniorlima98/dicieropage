@@ -5,67 +5,96 @@
     <title>Diciero</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
-        <section>
-            <ul class="menu-bar">
+        <section class="menu-desktop">
+            <ul class="menu-bar d-flex justify-content-between">
                 <img src="assets/img/logo-novo-retina-branco-300x149-sem-nome.png" alt="Logo" class="logo" style="margin-left: 0 !important; margin-right: 5rem; width: 3rem; height: 2rem;">
-                <li style="margin-right: 20rem;"><a href="manifesto.html" class="semSublinhado">Manifesto</a></li>
-                <li style="margin-right: 20rem;"><a href="sobre.html" class="semSublinhado">Sobre</a></li>
-                <li style="margin-right: 20rem;"><a href="servicos.html" class="semSublinhado">Serviços</a></li>
-                <li><a href="clientes.html" class="semSublinhado">Clientes</a></li>
+                <li><a href="manifesto.html" class="semSublinhado">Manifesto</a></li>
+                <li><a href="sobre.html" class="semSublinhado">Sobre</a></li>
+                <li><a href="servicos.html" class="semSublinhado">Serviços</a></li>
+                <li><a href="clientes.html" class="semSublinhado" style="margin-right: 1rem;">Clientes</a></li>
             </ul>
         </section>
+        <section class="menu-mobile">
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="navigation__button" style="margin-right: 0rem;"> 
+                  <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+                </label>
+                <div class="navigation__background"></div>
+          
+                <nav class="navigation__nav" role="navigation" style="display: flex; flex-direction: column; list-style: none; align-items: center; justify-content: center;">
+
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                        <a href="manifesto.html" class="navigation__link"><span></span>Manifesto</a>
+                        </li>
+                        <li class="navigation__item">
+                        <a href="sobre.html" class="navigation__link"><span></span>Sobre</a>
+                        </li>
+                        <li class="navigation__item">
+                        <a href="servicos.html" class="navigation__link"><span></span>Serviços</a>
+                        </li>
+                        <li class="navigation__item">
+                        <a href="clientes.html" class="navigation__link"><span></span>Clientes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
     </div>
-    <div class="container-fluid">
-        <div class="clientes-principais" style="padding-left: 10rem; border-radius: 1rem;">
-            <div class= "row">
-                <div class="col-md-3 col-6">
+    <div class="container-fluid" style="margin-bottom: 5rem;">
+        <div class="clientes-principais" style="padding-left: 10rem; border-radius: 1rem; margin-bottom: 19rem;">
+            <div class="row">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/amata-400x400.png" alt="amata" style="width: 180px; height: 180px;">
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/avb-400x400.png" alt="avb" style="width: 180px; height: 180px;">
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/corus-400x400.png" alt="corus" style="width: 180px; height: 180px;">
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/edp-400x400.png" alt="edp" style="width: 180px; height: 180px;">
                 </div>
             </div>
-            <div class= "row">
-                <div class="col-md-3 col-6">
+            <div class="row">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/innova-400x400.png" alt="innova" style="width: 180px; height: 180px;">
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/jari-celulose-400x400.png" alt="jari celulose" style="width: 180px; height: 180px;">
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/sysflor-400x400.png" alt="sysflor" style="width: 180px; height: 180px;">
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/eucatex.png" alt="eucatex" style="width: 180px; height: 180px;">
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-sm-6"> 
                     <img src="assets/img/clientes/tecpar-removebg-preview.png" alt="tecpar" style="width: 220px; height: 11rem;">
                 </div>
             </div>
         </div>
     </div>
-       
-     <!--rodapé-->
+ <!--rodapé-->
     <div>
-        <section style="margin-top: 5rem; position: relative ; width: 100%; bottom: 0px; margin-top: 15rem;">
+        <section style="margin-top: auto; position: relative; width: 100%; bottom: 0px;">
             <div class="footer-columns">
-                <div class="footer-column">
+                <div class="footer-column logotipo-diciero">
                     <p class="footer-links">
                         <p class="footer-company-name" style="margin-bottom:110px"><img src="assets/img/logo-novo-retina-branco-300x149.png" alt="logo_diciero"></p>
                     </p>
                 </div>
-                <div class="footer-column" style="margin-left: 12rem; margin-right: 2rem;">
+                <div class="footer-column">
                     <div class="fale-conosco">
                         <h5>Fale conosco</h5>
                     </div>
@@ -82,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-column" style="margin-top: 15px; text-align: left; margin-left: 4rem;">
+                <div class="footer-column redes-rodape">
                     <p class="footer-company-about">
                         <h5>Siga-nos nas Redes Sociais</h5>
                         <div class="footer-icons" style="text-align: left; margin-top: 20px;">
@@ -100,8 +129,13 @@
             </div> 
         </section>   
     </div>  
-        <a href="https://api.whatsapp.com/send?phone=5511952675812">
-            <img class="whatsapp-icon" src="assets/img/whatsapp_PNG20.png" alt="WhatsApp Icon">
-        </a>
+    <div class="bemfeitor">
+        <span style="margin-right: 1rem;"> Copyright by DreamWaveTech</span>
+        <a href="https://www.instagram.com/dreamwavetech/" class="social-icon"><i class="fa fa-instagram"></i></a>
+        <a href="https://wa.me/+5547999708920" class="social-icon"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5511952675812"> 
+        <img class="whatsapp-icon" src="assets/img/whatsapp_PNG20.png" alt="WhatsApp Icon">
+    </a>
 </body>
 </html>

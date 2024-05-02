@@ -7,25 +7,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <div class="container" style="margin-left: 0;">
-        <section>
-            <ul class="menu-bar">
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <div class="container">
+        <section class="menu-desktop">
+            <ul class="menu-bar d-flex justify-content-between">
                 <img src="assets/img/logo-novo-retina-branco-300x149-sem-nome.png" alt="Logo" class="logo" style="margin-left: 0 !important; margin-right: 5rem; width: 3rem; height: 2rem;">
-                <li style="margin-right: 20rem;"><a href="manifesto.html" class="semSublinhado">Manifesto</a></li>
-                <li style="margin-right: 20rem;"><a href="sobre.html" class="semSublinhado">Sobre</a></li>
-                <li style="margin-right: 20rem;"><a href="servicos.html" class="semSublinhado">Serviços</a></li>
-                <li><a href="clientes.html" class="semSublinhado">Clientes</a></li>
+                <li><a href="manifesto.html" class="semSublinhado">Manifesto</a></li>
+                <li><a href="sobre.html" class="semSublinhado">Sobre</a></li>
+                <li><a href="servicos.html" class="semSublinhado">Serviços</a></li>
+                <li><a href="clientes.html" class="semSublinhado" style="margin-right: 1rem;">Clientes</a></li>
             </ul>
+        </section>
+        <section class="menu-mobile">
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="navigation__button" style="margin-right: 0rem;"> 
+                  <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+                </label>
+                <div class="navigation__background"></div>
+          
+                <nav class="navigation__nav" role="navigation" style="display: flex; flex-direction: column; list-style: none; align-items: center; justify-content: center;">
+
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                        <a href="manifesto.html" class="navigation__link"><span></span>Manifesto</a>
+                        </li>
+                        <li class="navigation__item">
+                        <a href="sobre.html" class="navigation__link"><span></span>Sobre</a>
+                        </li>
+                        <li class="navigation__item">
+                        <a href="servicos.html" class="navigation__link"><span></span>Serviços</a>
+                        </li>
+                        <li class="navigation__item">
+                        <a href="clientes.html" class="navigation__link"><span></span>Clientes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
     </div>
     <div class="manifesto">
         <div>
             <div class="row"> 
-                <div class="col-12 d-flex justify-content-center" style="align-items: center; text-align: center;">
-                    <h1 style="margin-bottom: 3rem; font-size: 6rem;">MANIFESTO</h1>
+                <div class="col-12 d-flex justify-content-center titulo-manifesto" style="align-items: center; text-align: center;">
+                    <h1 style="margin-bottom: 3rem; font-weight: bold;">MANIFESTO</h1>
                 </div>
                 <div class="col" style="text-align: justify; color: rgba(3, 3, 17, 0.87); font-size: 1rem;">
                     <p>Vivemos tempos de repensar processos de trabalho, consumo e de produção. Para qualquer negócio, isso pode ser transformado em uma vantagem competitiva e fonte de inovação. Do momento em que o primeiro funcionário acende a luz no interruptor até ele ir embora; do produto que vem do fornecedor até o produto além do descarte; existem milhares de processos. E cada um deles é uma oportunidade para inovar, reduzir custos e gerar valor. É claro que cada empresa tem a sua cultura e as suas complexidades operacionais. Cada cenário pede um mergulho, um plano estratégico viável e ideias desenhadas na medida certa. Nada de relatórios complexos e sistemas mirabolantes. A Di Ciero acredita que sustentabilidade é inteligência com consciência, criatividade com simplicidade e solução com resultados. Nosso foco está em traduzir a sustentabilidade em legados para a sociedade e agregação de valor aos produtos e serviços.</hp>
@@ -57,21 +84,21 @@
             </div>
             <div class="mb-3 d-flex justify-content-center" style="margin-top: 2rem;">
                 <button type="submit" class="btn btn-primary btn-lg" style="background-color: rgb(120, 155, 69); border: 0; transition: background-color 0.3s;">
-                    <a href="servicos.html" style="text-decoration: none; color: inherit;">Enviar</a>
+                    <a href="servicos.html" style="text-decoration: none; color: inherit; font-weight: bolder">Enviar</a>
                 </button>
             </div>
         </form>
     </div>
     <div class="conheca-nossos-servicos">
         <div class="row">
-            <div class="col-md-6" style="color: white; margin-left: 5rem;">
+            <div class="col-md-8 temos-oferecer" style="color: white; margin-left: 4rem;">
                 <h1>O que temos para lhe oferecer</h1>
-                <h5 >Uma empresa especializada em propor soluções para as questões de meio ambiente, responsabilidade social e governança.</h5>
+                <h5>Uma empresa especializada em propor soluções para as questões de meio ambiente, responsabilidade social e governança.</h5>
             </div>
-            <div class="col-md-4 botao-entenda"> 
-                <button type="button" class="btn btn-primary btn-lg custom-button">
-                    <a href="servicos.html" style="text-decoration: none; color: inherit;">Conheca nossos Servicos</a>
-                </button>
+            <div class="col-md-4 botao-conheca-nossos-servicos"> 
+                <a href="servicos.html" class="btn btn-primary btn-lg custom-button">
+                   Conheça Nossos Serviços
+                </a>
             </div>
         </div>
     </div>
@@ -79,12 +106,12 @@
     <div>
         <section style="margin-top: auto; position: relative; width: 100%; bottom: 0px;">
             <div class="footer-columns">
-                <div class="footer-column">
+                <div class="footer-column logotipo-diciero">
                     <p class="footer-links">
                         <p class="footer-company-name" style="margin-bottom:110px"><img src="assets/img/logo-novo-retina-branco-300x149.png" alt="logo_diciero"></p>
                     </p>
                 </div>
-                <div class="footer-column" style="margin-left: 12rem; margin-right: 2rem;">
+                <div class="footer-column">
                     <div class="fale-conosco">
                         <h5>Fale conosco</h5>
                     </div>
@@ -101,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-column" style="margin-top: 15px; text-align: left; margin-left: 4rem;">
+                <div class="footer-column redes-rodape">
                     <p class="footer-company-about">
                         <h5>Siga-nos nas Redes Sociais</h5>
                         <div class="footer-icons" style="text-align: left; margin-top: 20px;">
@@ -118,9 +145,14 @@
                 </div>
             </div> 
         </section>   
-    </div>   
+    </div>  
+    <div class="bemfeitor">
+        <span style="margin-right: 1rem;"> Copyright by DreamWaveTech</span>
+        <a href="https://www.instagram.com/dreamwavetech/" class="social-icon"><i class="fa fa-instagram"></i></a>
+        <a href="https://wa.me/+5547999708920" class="social-icon"><i class="fa fa-whatsapp"></i></a>
+    </div>
     <a href="https://api.whatsapp.com/send?phone=5511952675812"> 
         <img class="whatsapp-icon" src="assets/img/whatsapp_PNG20.png" alt="WhatsApp Icon">
     </a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 </body>
+</html>
