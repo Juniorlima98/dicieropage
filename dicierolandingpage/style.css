@@ -1099,8 +1099,8 @@ code {
 @media screen and (max-width: 1920px) {
   .contato-relevo {
     position: absolute;
-    top:35%; 
-    left: 83%;
+    top:35% !important; 
+    left: 83% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
     padding: 20px;
@@ -1118,8 +1118,8 @@ code {
 @media screen and (max-width: 1720px) {
   .contato-relevo {
     position: absolute;
-    top:20%; 
-    left: 83%;
+    top:30% !important; 
+    left: 80% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
     padding: 20px;
@@ -1134,83 +1134,79 @@ code {
 }
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1720px) {
   .contato-relevo {
     position: absolute;
-    top:20% !important; 
-    left: 83%;
+    top:30% !important; 
+    left: 80% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
     padding: 20px;
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
     z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 10%; /* Defina a largura desejada */
+    width: 50%; /* Defina a largura desejada */
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: 100px;
-
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
   }
 }
 
-
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1440px) {
   .contato-relevo {
     position: absolute;
-    top:23% !important; 
-    left: 78% !important;
+    top:38% !important; 
+    left: 74% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
     padding: 20px;
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
     z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 10%; /* Defina a largura desejada */
+    width: 50%; /* Defina a largura desejada */
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: 100px;
-
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
   }
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1220px) {
   .contato-relevo {
     position: absolute;
-    top:23% !important; 
-    left: 72% !important;
+    top:38% !important; 
+    left: 74% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
     padding: 20px;
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
     z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 10%; /* Defina a largura desejada */
+    width: 50%; /* Defina a largura desejada */
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: 100px;
-
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
   }
 }
-
 
 
 @media screen and (max-width: 1100px) {
   .contato-relevo {
     position: absolute;
-    top:45% !important; 
-    left: 83%;
+    top:54% !important; 
+    left: 68% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
     padding: 20px;
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
     z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 10%; /* Defina a largura desejada */
+    width: 50%; /* Defina a largura desejada */
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: 100px;
-
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
   }
 }
-
-
 
 @media screen and (max-width: 900px) {
   .contato-relevo {
@@ -1429,6 +1425,17 @@ code {
   }
 }
 
+
+@media screen and (max-width: 700px) {
+  .botao-conheca-nossos-servicos {
+    background-color: #bac270;
+    border-radius: 0 0 10px 10px;
+    font-weight: bolder;
+    width: 50px;
+    margin-left: 16rem !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .botao-conheca-nossos-servicos {
     background-color: #bac270;
@@ -1445,10 +1452,20 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     width: 50px;
-    margin-left: 8rem !important;
+    margin-left: 12rem !important;
   }
 }
 
+
+@media screen and (max-width: 470px) {
+  .botao-conheca-nossos-servicos {
+    background-color: #bac270;
+    border-radius: 0 0 10px 10px;
+    font-weight: bolder;
+    width: 50px;
+    margin-left: 10rem !important;
+  }
+}
 
 
 
@@ -1457,7 +1474,7 @@ code {
     background-color: #bac270;
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
-    margin-left: 8rem !important;
+    margin-left: 7rem !important;
     text-align: center;
   }
 }
@@ -1469,101 +1486,8 @@ code {
 }
 
 
-@media screen and (max-width: 1900px) {
-  .contato-relevo {
-    position: absolute;
-    top:30% !important; 
-    left: 80% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-  }
-}
 
 
-
-
-@media screen and (max-width: 1700px) {
-  .contato-relevo {
-    position: absolute;
-    top:30% !important; 
-    left: 80%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    z-index: 10; 
-    width: 50%; 
-    max-width: 500px;
-    height: auto; 
-    margin-top: 20px; 
-  }
-}
-
-
-@media screen and (max-width: 1500px) {
-  .contato-relevo {
-    position: absolute;
-    top:45%; 
-    left: 78%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-  }
-}
-
-
-
-@media screen and (max-width: 1440px) {
-  .contato-relevo {
-    position: absolute;
-    top:29% !important; 
-    left: 78%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .contato-relevo {
-    position: absolute;
-    top:54% !important; 
-    left: 68% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-  }
-}
 
 @media screen and (max-width: 1920px) {
   .botao-entenda {
@@ -1682,14 +1606,7 @@ code {
   cursor: pointer;
 }
 
-@media screen  and (min-width: 768px) {
-  .navigation__button {
-      top: 4rem;
-      right: 4rem;
-      height: 7rem;
-      width: 7rem;
-  }
-}
+
 
 .navigation__background {
   position: fixed;
@@ -1705,14 +1622,7 @@ code {
   transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .navigation__background {
-      top: 4.5rem;
-      right: 4.5rem;
-      height: 6rem;
-      width: 6rem;
-  }
-}
+
 
 .navigation__nav {
   position: fixed;
@@ -1887,17 +1797,9 @@ right: 2.5%;
   }
  }
 
- @media screen and (max-width: 690px) {
-  .navigation__button{
-    margin-right: 5rem !important;
-  }
- }
 
- @media screen and (max-width: 780px) {
-  .navigation__button{
-    margin-right: 1rem !important;
-  }
- }
+
+
 
 
 .whatsapp-icon {
@@ -1945,6 +1847,13 @@ right: 2.5%;
 }
 
 
+@media screen and (max-width: 768px) {
+  .mobiles-card {
+    max-width: 320px !important;
+    overflow-x: auto;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .manifesto {
@@ -1989,6 +1898,18 @@ right: 2.5%;
 @media screen and (max-width: 760px) {
   .mobiles-card {
       margin-left: 15rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobiles-card {
+      margin-left: 6rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobiles-card {
+      margin-left: 5rem !important;
   }
 }
 
