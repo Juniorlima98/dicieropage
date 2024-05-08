@@ -12,7 +12,7 @@
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
     <div class="container">
         <section class="menu-desktop">
-            <ul class="menu-bar d-flex justify-content-between">
+            <ul class="menu-bar d-flex justify-content-around">
                 <img src="assets/img/logo-novo-retina-branco-300x149-sem-nome.png" alt="Logo" class="logo" style="width: 3rem; height: 2rem;">
                 <li><a href="manifesto.html" class="semSublinhado">Manifesto</a></li>
                 <li><a href="sobre.html" class="semSublinhado">Sobre</a></li>
@@ -61,33 +61,34 @@
         </div>     
     </div>
     <div class="contato-relevo">
-        <form>
+        <form method="post" action="contato-cliente.php">
             <div class="mb-3" style="text-align: center; color: rgb(120, 155, 69);">
                 <span> <h2>Fale com Nossos Especialistas!</h2></span>
                 <span><h5 style="color: rgb(167, 163, 151);">Será um prazer atendê-los</h5></span>
             </div>
             <div class="mb-3">
                 <label for="inputName" class="form-label">Seu Nome</label>
-                <input type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                <input type="input" class="form-control" id="inputName" placeholder="">
             </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Endereço de email</label>
-                <input type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                <input type="input" class="form-control" id="inputEmail"  placeholder="">
             </div>
             <div class="mb-3">
-                <label for="InputPassword" class="form-label">Empresa</label>
-                <input type="input" class="form-control" id="exampleInputPassword1" placeholder="">
+                <label for="inputEmpresa" class="form-label">Empresa</label>
+                <input type="input" class="form-control" id="inputEmpresa" placeholder="">
             </div>
             <div class="mb-3">
-                <label for="inputEmpresa" class="form-label">Telefone</label>
-                <input type="input" class="form-control" id="exampleInputPassword1" placeholder="">
+                <label for="inputTelefone" class="form-label">Telefone</label>
+                <input type="input" class="form-control" id="inputTelefone" placeholder="">
             </div>
             <div class="mb-3 d-flex justify-content-center" style="margin-top: 2rem;">
-                <button type="submit" class="btn btn-primary btn-lg" style="background-color: rgb(120, 155, 69); border: 0; transition: background-color 0.3s;">
-                    <a href="servicos.html" style="text-decoration: none; color: inherit; font-weight: bolder">Enviar</a>
+                <button type="submit" class="btn btn-primary btn-lg custom-button" style="background-color: rgb(120, 155, 69); border: 0; transition: background-color 0.3s;">
+                    Enviar
                 </button>
             </div>
         </form>
+        
     </div>
     <div class="conheca-nossos-servicos">
         <div class="row">

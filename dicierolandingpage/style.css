@@ -303,7 +303,7 @@
   padding-right: 40rem; 
   padding-bottom: 3rem; 
   padding-top: 3rem;
-  font-weight: bolder;
+  font-weight: 540;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -320,13 +320,11 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   font-weight: 500;
-  margin-right: 2rem;
   margin-top: 8rem !important;
   background-color: rgba(255, 255, 255, 0.897);
   padding-left: 5rem; 
   margin-left: 2rem; 
-  padding-right: 5rem; 
-  width: 90%;
+  padding-right: 40rem; 
   border-radius: 10px 10px 0px 0px;
 
   }
@@ -344,8 +342,6 @@
   padding-left: 5rem; 
   margin-left: 2rem; 
   padding-right: 5rem; 
-  width: 90% !important;
-
   }
 }
 
@@ -1158,7 +1154,25 @@ code {
 @media screen and (max-width: 1440px) {
   .contato-relevo {
     position: absolute;
-    top:38% !important; 
+    top:28% !important; 
+    left: 78% !important;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
+    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
+    width: 50%; /* Defina a largura desejada */
+    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .contato-relevo {
+    position: absolute;
+    top:30% !important; 
     left: 74% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1177,7 +1191,7 @@ code {
 @media screen and (max-width: 1220px) {
   .contato-relevo {
     position: absolute;
-    top:38% !important; 
+    top:30% !important; 
     left: 74% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1196,7 +1210,25 @@ code {
 @media screen and (max-width: 1100px) {
   .contato-relevo {
     position: absolute;
-    top:54% !important; 
+    top:34% !important; 
+    left: 69% !important;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
+    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
+    width: 50%; /* Defina a largura desejada */
+    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contato-relevo {
+    position: absolute;
+    top:38% !important; 
     left: 68% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1210,6 +1242,8 @@ code {
     margin-top: 20px; /* Ajuste conforme necessário */
   }
 }
+
+
 
 @media screen and (max-width: 900px) {
   .contato-relevo {
@@ -1263,6 +1297,8 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     padding-bottom: 0;
+    text-align: center;
+    padding-left: 14rem;
   }
 }
 
@@ -1275,6 +1311,8 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     padding-bottom: 0;
+    text-align: center;
+    padding-left: 10rem;
   }
 }
 
@@ -1285,9 +1323,8 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     padding-bottom: 0;
-    padding-right: 30rem;
-    text-align: justify;
-    width: 90%;
+    text-align: center;
+    padding-left: 7rem;
   }
 
   .custom-button{
@@ -1296,14 +1333,14 @@ code {
 }
 
 
+
 @media screen and (max-width: 900px) {
   .conheca-nossos-servicos {
     background-color: #bac270;
     padding-top: 2rem;
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
-    padding-bottom: 0;
-    padding-right: 0px;
+    padding-left: 0;
     text-align: center;
   }
 
@@ -1360,7 +1397,7 @@ code {
     margin: 0rem 2rem 4rem 2rem;
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
-    margin-left: 40rem !important;
+    margin-left: 25rem !important;
   }
 }
 
@@ -1385,7 +1422,7 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     width:600px;
-    margin-left: 27rem !important;
+    margin-left: 15rem !important;
   }
 }
 
@@ -1393,11 +1430,10 @@ code {
 @media screen and (max-width: 1300px) {
   .botao-conheca-nossos-servicos {
     background-color: #bac270;
-    margin: 0rem 2rem 4rem 2rem;
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
-    width:600px;
-    margin-left: 18rem !important;
+    width:auto;
+    margin-left: 20rem !important;
   }
 }
 
@@ -1409,7 +1445,7 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     width:600px;
-    margin-left: 18rem !important;
+    margin-left:8rem !important;
   }
 }
 
@@ -1421,7 +1457,7 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     width:300px;
-    margin-left: 4rem !important;
+    margin-left: 18rem !important;
   }
 }
 
