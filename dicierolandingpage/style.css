@@ -253,7 +253,7 @@
   font-family: "Poppins", "sans-serif" !important;
   margin-bottom: 1rem;
   padding-bottom: 0;
-  padding-left: 6rem;
+  padding-left: 6rem !important;
   border: 1px solid #ffffff22;
   box-shadow: 0 7px 20px 5px #00000088;
   border-radius: .7rem;
@@ -381,13 +381,13 @@
 
 @media screen and (min-width: 1500px) {
   .alexandre-diciero p {
-    margin-top: 5rem !important;
-    font-weight: bold;
+    margin-top: 4rem !important;
+    font-weight: 520;
     padding-right: 10rem;
   }
   .alexandre-diciero h1 {
-    margin-top: 5rem !important;
-    font-weight: bold;
+    margin-top: 1rem !important;
+    font-weight: 100;
     padding-right: 10rem;
   }
 }
@@ -449,12 +449,34 @@
   
 }
 
+
+@media (max-width: 600px) {
+  .video-youtube {
+    width: 100% !important;
+    display: flex;
+    margin-left: 0px !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .quem-somos {
     width: 100% !important;
     margin-left: 0rem !important;
     align-items: center;
     display: flex;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+  .quem-somos {
+    width: 100% !important;
+    margin-left: 0rem !important;
+    align-items: center;
+    display: flex;
+    text-align: center;
   }
 }
 
@@ -525,7 +547,6 @@
   border: 1px solid #6ac05e44;
   box-shadow: 0 7px 50px 10px #000000aa;
   transform: scale(1.015);
-  filter: brightness(1.3);
 }
 
 .alexandre-diciero:hover::before {
@@ -1062,7 +1083,7 @@ code {
 
 .contato-relevo {
   position: absolute;
-  top:23% !important; 
+  top:33% !important; 
   left: 78% !important;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1098,7 +1119,7 @@ code {
 @media screen and (max-width: 1920px) {
   .contato-relevo {
     position: absolute;
-    top:35% !important; 
+    top:45% !important; 
     left: 83% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1117,7 +1138,7 @@ code {
 @media screen and (max-width: 1720px) {
   .contato-relevo {
     position: absolute;
-    top:30% !important; 
+    top:0% !important; 
     left: 80% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1132,24 +1153,6 @@ code {
   }
 }
 
-
-@media screen and (max-width: 1720px) {
-  .contato-relevo {
-    position: absolute;
-    top:30% !important; 
-    left: 80% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-  }
-}
 
 @media screen and (max-width: 1440px) {
   .contato-relevo {
@@ -1225,10 +1228,28 @@ code {
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .contato-relevo {
+    position: absolute;
+    top:45% !important; 
+    left: 69% !important;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
+    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
+    width: 50%; /* Defina a largura desejada */
+    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .contato-relevo {
     position: absolute;
-    top:38% !important; 
+    top:48% !important; 
     left: 68% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
