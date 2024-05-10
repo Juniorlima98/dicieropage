@@ -611,8 +611,6 @@
 
 
 
-
-
 .menu-bar li {
   list-style: none;
   color: white !important;
@@ -1138,8 +1136,27 @@ code {
 @media screen and (max-width: 1720px) {
   .contato-relevo {
     position: absolute;
-    top:0% !important; 
+    top:30% !important; 
     left: 80% !important;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
+    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
+    width: 50%; /* Defina a largura desejada */
+    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
+  }
+}
+
+
+@media screen and (max-width: 1640px) {
+  .contato-relevo {
+    position: absolute;
+    top:30% !important; 
+    left: 78% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
     padding: 20px;
@@ -1157,7 +1174,7 @@ code {
 @media screen and (max-width: 1440px) {
   .contato-relevo {
     position: absolute;
-    top:28% !important; 
+    top:30% !important; 
     left: 78% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1175,7 +1192,7 @@ code {
 @media screen and (max-width: 1350px) {
   .contato-relevo {
     position: absolute;
-    top:30% !important; 
+    top:35% !important; 
     left: 74% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1194,7 +1211,7 @@ code {
 @media screen and (max-width: 1220px) {
   .contato-relevo {
     position: absolute;
-    top:30% !important; 
+    top:38% !important; 
     left: 74% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1249,7 +1266,7 @@ code {
 @media screen and (max-width: 1000px) {
   .contato-relevo {
     position: absolute;
-    top:48% !important; 
+    top:40% !important; 
     left: 68% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
