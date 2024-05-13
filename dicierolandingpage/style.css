@@ -887,8 +887,6 @@ code {
 }
 
 
-
-
 .services-card h2 {
   font-size: 2rem;
   color: white;
@@ -904,9 +902,10 @@ code {
 
 .modal {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.932);
+  background-color: rgba(255, 255, 255);
   z-index: 1000;
   border-radius: 10px;
+  height: auto;
 }
 
 
@@ -1136,7 +1135,7 @@ code {
 @media screen and (max-width: 1720px) {
   .contato-relevo {
     position: absolute;
-    top:30% !important; 
+    top: 30% !important; 
     left: 80% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1148,6 +1147,34 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
   }
 }
 
@@ -1167,6 +1194,34 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
   }
 }
 
@@ -1186,6 +1241,34 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
   }
 }
 
@@ -1204,6 +1287,34 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
   }
 }
 
@@ -1223,6 +1334,34 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
   }
 }
 
@@ -1242,6 +1381,35 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
+
   }
 }
 
@@ -1260,6 +1428,34 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
   }
 }
 
@@ -1278,6 +1474,34 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
+    
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 39% !important;
+    }
+    @media screen and (max-height: 800px) {
+      top: 45% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 50% !important;
+    }
   }
 }
 
