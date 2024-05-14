@@ -911,7 +911,6 @@ code {
 
 .menu-sanfona > li {
   list-style: none;
-  font-size: 18px;
   font-family: Mulish;
   font-weight: 800;
   line-height: 1.5;
@@ -947,12 +946,6 @@ code {
   overflow: hidden; /* Adiciona overflow hidden para esconder a sombra extra */
 }
 
-
-.menu-sanfona p {
-  font-size: 1rem;
-}
-
-
 .menu-sanfona h2 {
   margin: 0;
   padding: 15px 20px;
@@ -967,7 +960,6 @@ code {
 
 .menu-sanfona ul li {
   padding: 10px 20px;
-  font-size: 16px;
   color: #130202;
   cursor: pointer;
   position: relative; /* Adiciona posição relativa para z-index funcionar */
@@ -975,14 +967,8 @@ code {
 }
 
 .menu-sanfona ul li:hover {
-  background-color: #718b5234; /* Cor de fundo do item ao passar o mouse */
+  background-color: #26301b1f; /* Cor de fundo do item ao passar o mouse */
 }
-
-.menu-sanfona li {
-  position: relative; /* Posição relativa para permitir posicionamento absoluto dos pseudoelementos */
-  
-}
-
 
 .menu-sanfona li::before {
   content: '';
@@ -1167,13 +1153,25 @@ code {
       top: 33% !important;
     }
     @media screen and (max-height: 1100px) {
-      top: 39% !important;
+      top: 36% !important;
+    }
+    @media screen and (max-height: 1000px) {
+      top: 40% !important;
+    }
+    @media screen and (max-height: 900px) {
+      top: 45% !important;
     }
     @media screen and (max-height: 800px) {
       top: 45% !important;
     }
-    @media screen and (max-height: 600px) {
+    @media screen and (max-height: 700px) {
       top: 50% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 60% !important;
+    }
+    @media screen and (max-height: 500px) {
+      top: 70% !important;
     }
   }
 }
