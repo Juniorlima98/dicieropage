@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 .menu-bar {
   list-style: none;
   padding: 0;
@@ -99,13 +104,12 @@
   }
 }
 
-/* Mostra o menu mobile em telas menores */
 @media only screen and (max-width: 768px) {
   .menu-desktop {
-      display: none !important;
+    display: none !important;
   }
   .menu-mobile {
-      display: block;
+    display: block;
   }
 }
 
@@ -150,6 +154,7 @@
 
 
 
+
 @media screen and (max-width: 900px) {
   .temos-oferecer{
     margin-top: 2rem;
@@ -168,17 +173,39 @@
   .temos-oferecer{
     margin-top: 2rem;
     margin-bottom: 4rem;
-    margin-left: 1rem !important;
+    margin-left: 3rem !important;
     padding-right: 5rem;
     width: auto;
   }
 }
 
+@media screen and (max-width: 650px) {
+  .temos-oferecer{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem !important;
+    padding-right: 5rem;
+    padding-left: 3rem !important;
+  }
+}
+
+
+@media screen and (max-width: 590px) {
+  .temos-oferecer{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem !important;
+    padding-right: 5rem;
+    padding-left: 3rem !important;
+  }
+}
+
+
 @media screen and (max-width: 390px) {
   .temos-oferecer{
     margin-top: 2rem;
     margin-bottom: 4rem;
-    margin-left: 1rem !important;
+    margin-left: 2rem !important;
     padding-right: 5rem;
     padding-left: 3rem !important;
   }
@@ -231,7 +258,6 @@
 
 
 .btn-primary-custom {
-  background-color: rgb(120, 155, 69);
   border: 0;
   transition: background-color 0.3s;
 }
@@ -249,6 +275,7 @@
   margin-left: 7rem;
   margin-right: 7rem;
   margin-top: 6rem;
+  padding-right: 4rem;
   user-select: none;
   font-family: "Poppins", "sans-serif" !important;
   margin-bottom: 1rem;
@@ -280,7 +307,6 @@
   border: 1px solid #6ac05e44;
   box-shadow: 0 7px 50px 10px #000000aa;
   transform: scale(1.015);
-  filter: brightness(1.3);
 }
 
 .quem-somos:hover::before {
@@ -350,6 +376,7 @@
     margin-right: 0rem !important;
     padding-left: 3rem;
     padding-right: 3rem;
+    margin-left: 0;
   }
 
   .h1 {
@@ -357,27 +384,29 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .manifesto {
+    margin-right: 0rem !important;
+    margin-top:2rem !important;
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .manifesto {
     width: 100%;
-    margin-right: 0rem !important;
+    margin-left: 0;
   }
 }
 
 
 .custom-button{
-  background-color: rgb(120, 155, 69);
   border-radius: 10px 10px 10px 10px;
   font-weight: bolder;
   border: 0;
   height: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .custom-button {
-   padding-bottom: 6rem;
-  }
-}
 
 @media screen and (min-width: 1500px) {
   .alexandre-diciero p {
@@ -399,6 +428,7 @@
     width: 100% !important;
     margin-left: 0rem !important;
     align-items: center;
+    padding-right: 4rem !important;
   }
   .vitor-foto,
   .lucio-foto,
@@ -445,17 +475,31 @@
   .vitor-foto{
     text-align: center;
     margin-left: 0px !important;
-  }
-  
+  } 
 }
 
 
-@media (max-width: 600px) {
-  .video-youtube {
-    width: 100% !important;
-    display: flex;
-    margin-left: 0px !important;
+
+@media (max-width: 1000px) {
+  .alexandre-foto{
+    margin-top: 4rem !important;
   }
+  .lucio-foto{
+    margin-top: 4rem !important;
+  }
+  .cris-foto{
+    margin-top: 4rem !important;
+  }
+  .vitor-foto{
+    margin-top: 4rem !important;
+  } 
+}
+
+}
+.video-youtube {
+    width: 100% !important;
+    margin: 2rem;
+    margin-top: 2rem !important;
 }
 
 @media (max-width: 1200px) {
@@ -467,16 +511,20 @@
   }
 }
 
-
-
-
 @media (max-width: 600px) {
   .quem-somos {
-    width: 100% !important;
-    margin-left: 0rem !important;
     align-items: center;
     display: flex;
     text-align: center;
+    padding-left: 0 !important;
+    margin-top: 3rem;
+    padding-right: 0rem;
+  }
+  
+  .quem-somos h5 {
+    padding: 2rem;
+    margin-right: 0 !important;
+    margin-top: 1rem !important;
   }
 }
 
@@ -487,12 +535,10 @@
   backdrop-filter: blur(10px); /* Efeito de desfoque do fundo */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra */
   padding-top: 0rem;
-  padding-top: 1rem;
   padding-left: 4rem;
   padding-right: 4rem;
   margin-left: 7rem;
   margin-right: 7rem;
-  user-select: none;
   font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
   border: 1px solid #ffffff22;
@@ -503,7 +549,6 @@
   overflow: hidden;
   transition: .5s all;
   color: rgb(0, 0, 0) !important;
-  padding-right: 2rem;
   text-align: justify;
   letter-spacing: 0px;
 }
@@ -556,41 +601,19 @@
 }
 
 
-.principais-clientes{
-  background-color: rgba(8, 0, 0, 0.425); /* Cor de fundo semi-transparente */
-  -webkit-backdrop-filter: blur(10px); /* Efeito de desfoque do fundo */
-  backdrop-filter: blur(10px); /* Efeito de desfoque do fundo */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra */
-  user-select: none;
-  font-weight: bold; 
-  font-family: "Poppins", sans-serif;
-  justify-content: center; /* Alinha os elementos filhos verticalmente */
-  text-align: center !important;
-  align-items: center;
-  border: 1px solid #ffffff22;
-  box-shadow: 0 7px 20px 5px #00000088;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(7px);
-  overflow: hidden;
-  transition: .5s all;
-  color: white !important;
-  text-align: justify;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  border-radius: 10px;
-}
+
 
 
 
 .clientes-principais{
-  background-color: rgba(255, 255, 255, 0.767);
-  margin-top: 12rem; 
+  background-color: rgba(0, 0, 0, 0.349);
+  margin-top: 10rem; 
   padding: 1rem;  
   margin-right: 2.5rem;
   margin-left: 1rem;
   backdrop-filter: blur(4px); 
   -webkit-backdrop-filter: blur(7px);
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 
 
@@ -604,8 +627,8 @@
 
 @media (max-width: 700px) {
   .clientes-principais {
-    padding-left: 0rem !important;
     text-align: center;
+    margin-left: 3rem;
   }
 }
 
@@ -633,9 +656,34 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  position: relative; /* Necessário para que o ::before funcione corretamente */
 }
 
+body::before {
+  content: "";
+  position: fixed; /* Altera para fixed para que o pseudo-elemento cubra a tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+  pointer-events: none; /* Permite interagir com o conteúdo abaixo */
+  z-index: -1; /* Garante que o pseudo-elemento fique atrás do conteúdo */
+}
 
+@media screen and (max-width: 768px) {
+  body {
+    background: url('assets/img/fundo-celular.png');
+    background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
+    background-position: center; /* Centraliza a imagem na tela */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
+  }
+
+  body::before {
+    background: rgba(0, 0, 0, 0.849); 
+  }
+}
 
 .fa{
   margin-right: 15px;
@@ -1102,7 +1150,7 @@ code {
 @media screen and (max-width: 1920px) {
   .contato-relevo {
     position: absolute;
-    top:45% !important; 
+    top:33% !important; 
     left: 83% !important;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
@@ -1157,9 +1205,6 @@ code {
     }
     @media screen and (max-height: 1000px) {
       top: 40% !important;
-    }
-    @media screen and (max-height: 900px) {
-      top: 45% !important;
     }
     @media screen and (max-height: 800px) {
       top: 45% !important;
@@ -1218,7 +1263,7 @@ code {
       top: 40% !important;
     }
     @media screen and (max-height: 900px) {
-      top: 45% !important;
+      top: 40% !important;
     }
     @media screen and (max-height: 800px) {
       top: 45% !important;
@@ -1259,7 +1304,7 @@ code {
       top: 22% !important;
     }
     @media screen and (max-height: 1550px) {
-      top: 22% !important;
+      top: 20% !important;
     }
     @media screen and (max-height: 1400px) {
       top: 28% !important;
@@ -1277,7 +1322,7 @@ code {
       top: 40% !important;
     }
     @media screen and (max-height: 900px) {
-      top: 45% !important;
+      top: 40% !important;
     }
     @media screen and (max-height: 800px) {
       top: 45% !important;
@@ -1569,10 +1614,7 @@ code {
       top: 40% !important;
     }
     @media screen and (max-height: 900px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
+      top: 55% !important;
     }
     @media screen and (max-height: 700px) {
       top: 50% !important;
@@ -1699,15 +1741,12 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     padding-bottom: 0;
-    width: 90%;
-    padding-right: 0px;
     text-align: center;
-  }
-
-  .custom-button{
-    height: 6.5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+    padding-right: 4rem !important;
+    margin-bottom: 5rem !important;
   }
 }
 
@@ -1721,9 +1760,10 @@ code {
   margin-top: 5rem;
 }
 
+
+
 @media screen and (max-width: 1900px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
     margin: 0rem 2rem 4rem 2rem;
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
@@ -1736,10 +1776,6 @@ code {
 
 @media screen and (max-width: 1700px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    margin: 0rem 2rem 4rem 2rem;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
     margin-left: 25rem !important;
   }
 }
@@ -1747,7 +1783,6 @@ code {
 
 @media screen and (max-width: 1480px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
     margin: 0rem 2rem 4rem 2rem;
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
@@ -1760,22 +1795,13 @@ code {
 
 @media screen and (max-width: 1400px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    margin: 0rem 2rem 4rem 2rem;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width:600px;
-    margin-left: 15rem !important;
+    margin-left: 24rem !important;
   }
 }
 
 
 @media screen and (max-width: 1300px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width:auto;
     margin-left: 20rem !important;
   }
 }
@@ -1783,101 +1809,59 @@ code {
 
 @media screen and (max-width: 1150px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    margin: 0rem 2rem 4rem 2rem;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width:600px;
-    margin-left:8rem !important;
+    margin-left: 17rem !important;
   }
 }
 
 
 @media screen and (max-width: 1100px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    margin: 0rem 2rem 4rem 2rem;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width:300px;
-    margin-left: 18rem !important;
+    margin-left: 1rem !important;
+
   }
 }
 
 @media screen and (max-width: 900px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    margin: 0rem 2rem 4rem 2rem;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width:50%;
-    margin-left: 16rem !important;
+    margin-left: 17rem !important;
   }
 }
+
 
 @media screen and (max-width: 768px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width: 50px;
-    margin-left: 19rem !important;
-  }
-}
-
-
-@media screen and (max-width: 700px) {
-  .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width: 50px;
-    margin-left: 16rem !important;
+    margin-left: 14rem !important;
   }
 }
 
 @media screen and (max-width: 600px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width: 50px;
-    margin-left: 11rem !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width: 50px;
-    margin-left: 12rem !important;
-  }
-}
-
-
-@media screen and (max-width: 470px) {
-  .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    width: 50px;
     margin-left: 10rem !important;
   }
 }
 
-
-
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 550px) {
   .botao-conheca-nossos-servicos {
-    background-color: #bac270;
-    border-radius: 0 0 10px 10px;
-    font-weight: bolder;
-    margin-left: 7rem !important;
-    text-align: center;
+    margin-left: 8rem !important;
   }
 }
+
+
+@media screen and (max-width: 450px) {
+  .botao-conheca-nossos-servicos {
+    margin-left: 4rem !important;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .botao-conheca-nossos-servicos {
+    margin-left: 2rem !important;
+  }
+}
+
+
+
 
 @media screen and (max-width: 900px) {
   .rodape-manifesto {
@@ -1925,17 +1909,6 @@ code {
     }
     
   }
-
-
-  @media screen and (min-width: 1920px) {
-    .conheca-nossos-servicos {
-      margin-bottom: 20rem; 
-  
-  }
-}
-
-
-
 
 
 @media screen and (max-width: 600px) {
@@ -2015,8 +1988,8 @@ code {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  background: #4a676a17;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.445);
   background-position: center;
   z-index: 100;
   transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -2034,7 +2007,7 @@ code {
   visibility: hidden;
   z-index: 200;
   transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  background-color: rgba(8, 20, 3, 0.932);
+  background-color: rgb(0 0 0 / 98%);
 }
 
 .navigation__list {
@@ -2247,22 +2220,6 @@ right: 2.5%;
 }
 
 
-@media screen and (max-width: 768px) {
-  .mobiles-card {
-    max-width: 320px !important;
-    overflow-x: auto;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  .manifesto {
-    width: 90%;
-    margin-right: 0rem !important;
-    margin-top: 3rem !important;
-  }
-}
-
 
 @media screen and (min-width: 1200px) {
   .mobiles-card {
@@ -2285,38 +2242,9 @@ right: 2.5%;
 }
 
 
-
-/* Define margin-left e margin-top para .mobiles-card em telas menores que 780px */
-@media screen and (max-width: 780px) {
-  .mobiles-card {
-      margin-left: 3rem !important;
-      margin-top: 10rem !important;
-  }
-}
-
-/* Define margin-left para .mobiles-card em telas menores que 760px */
-@media screen and (max-width: 760px) {
-  .mobiles-card {
-      margin-left: 15rem !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mobiles-card {
-      margin-left: 6rem !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .mobiles-card {
-      margin-left: 5rem !important;
-  }
-}
-
-/* Define margin-left e margin-top para .mobiles-card em telas menores que 390px */
-@media screen and (max-width: 390px) {
-  .mobiles-card {
-      margin-left: 2rem !important;
-      margin-top: 9rem !important;
-  }
+.mobiles-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
 }
