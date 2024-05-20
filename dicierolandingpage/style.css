@@ -139,19 +139,49 @@ html {
 }
 
 
+@media screen and (max-width: 1800px) {
+  .temos-oferecer{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    margin-left: 20rem !important;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .temos-oferecer{
     margin-top: 2rem;
     margin-bottom: 4rem;
+    margin-left: 9rem !important;
   }
-  
-  .menu-item {
-      margin-right: 0;
-      margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .temos-oferecer{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 8rem !important;
   }
 }
 
 
+
+@media screen and (max-width: 1500px) {
+  .temos-oferecer{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 6rem !important;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .temos-oferecer{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem !important;
+  }
+}
 
 
 
@@ -159,12 +189,7 @@ html {
   .temos-oferecer{
     margin-top: 2rem;
     margin-bottom: 4rem;
-    margin-left: 10rem !important;
-  }
-  
-  .menu-item {
-      margin-right: 0;
-      margin-bottom: 1rem;
+    margin-left: 1rem !important;
   }
 }
 
@@ -326,7 +351,7 @@ html {
   background-color: rgba(255, 255, 255, 0.897);
   padding-left: 5rem; 
   margin-left: 2rem; 
-  padding-right: 40rem; 
+  padding-right: 40rem !important; 
   padding-bottom: 3rem; 
   padding-top: 3rem;
   font-weight: 540;
@@ -350,9 +375,8 @@ html {
   background-color: rgba(255, 255, 255, 0.897);
   padding-left: 5rem; 
   margin-left: 2rem; 
-  padding-right: 40rem; 
+  padding-right: 5rem !important;
   border-radius: 10px 10px 0px 0px;
-
   }
 }
 
@@ -371,18 +395,7 @@ html {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .titulo-manifesto {
-    margin-right: 0rem !important;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-left: 0;
-  }
 
-  .h1 {
-    font-size: 3rem !important;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .manifesto {
@@ -399,7 +412,18 @@ html {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .titulo-manifesto {
+    margin-right: 0rem !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 0;
+  }
 
+  .h1 {
+    font-size: 3rem !important;
+  }
+}
 .custom-button{
   border-radius: 10px 10px 10px 10px;
   font-weight: bolder;
@@ -495,7 +519,6 @@ html {
   } 
 }
 
-}
 .video-youtube {
     width: 100% !important;
     margin: 2rem;
@@ -606,7 +629,7 @@ html {
 
 
 .clientes-principais{
-  background-color: rgba(0, 0, 0, 0.349);
+  background-color: rgba(255, 255, 255, 0.856);
   margin-top: 10rem; 
   padding: 1rem;  
   margin-right: 2.5rem;
@@ -617,6 +640,13 @@ html {
 }
 
 
+@media (max-width: 900px) {
+  .clientes-principais {
+    background-color: rgba(0, 0, 0, 0.349);
+    padding-left: 0rem !important;
+    text-align: center;
+  }
+}
 
 @media (max-width: 900px) {
   .clientes-principais {
@@ -1112,12 +1142,18 @@ code {
 }
 
 
+@media screen and (max-width: 768px) {
+  .contato-relevo {
+    display: none;
+  }
+}
+
 .contato-relevo {
   position: absolute;
   top:33% !important; 
   left: 78% !important;
-  transform: translate(-50%, -50%);
-  background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
+  transform: translate(-50%, -50%) !important;
+  background-color: rgb(255, 255, 255) !important;
   padding: 20px;
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
@@ -1125,7 +1161,6 @@ code {
   width: 10%; /* Defina a largura desejada */
   max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
   height: 100px;
-
 }
 
 
@@ -1162,432 +1197,7 @@ code {
     max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
     height: auto; /* Ou defina uma altura fixa se necessário */
     margin-top: 20px; /* Ajuste conforme necessário */
-  }
-}
 
-
-@media screen and (max-width: 1720px) {
-  .contato-relevo {
-    position: absolute;
-    top: 30% !important; 
-    left: 80% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-
-    @media screen and (min-height: 1600px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1600px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1550px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1400px) {
-      top: 28% !important;
-    }
-    @media screen and (max-height: 1300px) {
-      top: 30% !important;
-    }
-    @media screen and (max-height: 1200px) {
-      top: 33% !important;
-    }
-    @media screen and (max-height: 1100px) {
-      top: 36% !important;
-    }
-    @media screen and (max-height: 1000px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
-    }
-    @media screen and (max-height: 600px) {
-      top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
-    }
-  }
-}
-
-
-@media screen and (max-width: 1640px) {
-  .contato-relevo {
-    position: absolute;
-    top:30% !important; 
-    left: 78% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-
-    @media screen and (min-height: 1600px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1600px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1550px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1400px) {
-      top: 28% !important;
-    }
-    @media screen and (max-height: 1300px) {
-      top: 30% !important;
-    }
-    @media screen and (max-height: 1200px) {
-      top: 33% !important;
-    }
-    @media screen and (max-height: 1100px) {
-      top: 36% !important;
-    }
-    @media screen and (max-height: 1000px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 900px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
-    }
-    @media screen and (max-height: 600px) {
-      top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
-    }
-  }
-}
-
-
-@media screen and (max-width: 1440px) {
-  .contato-relevo {
-    position: absolute;
-    top:30% !important; 
-    left: 78% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-
-    @media screen and (min-height: 1600px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1600px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1550px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1400px) {
-      top: 28% !important;
-    }
-    @media screen and (max-height: 1300px) {
-      top: 30% !important;
-    }
-    @media screen and (max-height: 1200px) {
-      top: 33% !important;
-    }
-    @media screen and (max-height: 1100px) {
-      top: 36% !important;
-    }
-    @media screen and (max-height: 1000px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 900px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
-    }
-    @media screen and (max-height: 600px) {
-      top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
-    }
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  .contato-relevo {
-    position: absolute;
-    top:35% !important; 
-    left: 74% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-
-    @media screen and (min-height: 1600px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1600px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1550px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1400px) {
-      top: 28% !important;
-    }
-    @media screen and (max-height: 1300px) {
-      top: 30% !important;
-    }
-    @media screen and (max-height: 1200px) {
-      top: 33% !important;
-    }
-    @media screen and (max-height: 1100px) {
-      top: 36% !important;
-    }
-    @media screen and (max-height: 1000px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 900px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
-    }
-    @media screen and (max-height: 600px) {
-      top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
-    }
-  }
-}
-
-
-@media screen and (max-width: 1220px) {
-  .contato-relevo {
-    position: absolute;
-    top:38% !important; 
-    left: 74% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-
-    @media screen and (min-height: 1600px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1600px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1550px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1400px) {
-      top: 28% !important;
-    }
-    @media screen and (max-height: 1300px) {
-      top: 30% !important;
-    }
-    @media screen and (max-height: 1200px) {
-      top: 33% !important;
-    }
-    @media screen and (max-height: 1100px) {
-      top: 36% !important;
-    }
-    @media screen and (max-height: 1000px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 900px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
-    }
-    @media screen and (max-height: 600px) {
-      top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
-    }
-  }
-}
-
-
-@media screen and (max-width: 1100px) {
-  .contato-relevo {
-    position: absolute;
-    top:34% !important; 
-    left: 69% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-
-    @media screen and (min-height: 1600px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1600px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1550px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1400px) {
-      top: 28% !important;
-    }
-    @media screen and (max-height: 1300px) {
-      top: 30% !important;
-    }
-    @media screen and (max-height: 1200px) {
-      top: 33% !important;
-    }
-    @media screen and (max-height: 1100px) {
-      top: 36% !important;
-    }
-    @media screen and (max-height: 1000px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 900px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
-    }
-    @media screen and (max-height: 600px) {
-      top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
-    }
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .contato-relevo {
-    position: absolute;
-    top:45% !important; 
-    left: 69% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
-
-    @media screen and (min-height: 1600px) {
-      top: 20% !important;
-    }
-    @media screen and (max-height: 1600px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1550px) {
-      top: 22% !important;
-    }
-    @media screen and (max-height: 1400px) {
-      top: 28% !important;
-    }
-    @media screen and (max-height: 1300px) {
-      top: 30% !important;
-    }
-    @media screen and (max-height: 1200px) {
-      top: 33% !important;
-    }
-    @media screen and (max-height: 1100px) {
-      top: 36% !important;
-    }
-    @media screen and (max-height: 1000px) {
-      top: 40% !important;
-    }
-    @media screen and (max-height: 900px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 800px) {
-      top: 45% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
-    }
-    @media screen and (max-height: 600px) {
-      top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
-    }
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .contato-relevo {
-    position: absolute;
-    top:40% !important; 
-    left: 68% !important;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
-    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
-    width: 50%; /* Defina a largura desejada */
-    max-width: 500px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
-    height: auto; /* Ou defina uma altura fixa se necessário */
-    margin-top: 20px; /* Ajuste conforme necessário */
     
     @media screen and (min-height: 1600px) {
       top: 20% !important;
@@ -1604,6 +1214,200 @@ code {
     @media screen and (max-height: 1300px) {
       top: 30% !important;
     }
+    @media screen and (max-height: 1100px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1050px) {
+      top: 30% !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1720px) {
+  .contato-relevo {
+    position: absolute;
+    top: 30% !important; 
+    left: 80% !important;
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1100px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1050px) {
+      top: 30% !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1640px) {
+  .contato-relevo {
+    position: absolute;
+    top:30% !important; 
+    left: 80% !important;
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1500px) {
+      top: 25% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 30% !important;
+    }
+}
+}
+
+@media screen and (max-width: 1440px) {
+  .contato-relevo {
+    position: absolute;
+    top:30% !important; 
+    left: 78% !important;
+
+    @media screen and (min-height: 1900px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 40% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 25% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .contato-relevo {
+    position: absolute;
+    top:35% !important; 
+    left: 76% !important;
+
+    @media screen and (min-height: 1900px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1450px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 25% !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1220px) {
+  .contato-relevo {
+    position: absolute;
+    top:38% ; 
+    left: 74% !important;
+
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1600px) {
+      top: 22% !important;
+    }
+    @media screen and (max-height: 1550px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1200px) {
+      top: 33% !important;
+    }
+    @media screen and (max-height: 900px) {
+      top: 30% !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .contato-relevo {
+    position: absolute;
+    width: 40%; /* Defina a largura desejada */
+    max-width: 420px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
+
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
+    @media screen and (max-height: 1000px) {
+      top: 40% !important;
+    }
+    @media screen and (max-height: 900px) {
+      top: 58% !important;
+    }
+    @media screen and (max-height: 600px) {
+      top: 60% !important;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .contato-relevo {
+    position: absolute;
+    top:40% !important; 
+    left: 72% !important;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra para efeito de relevo */
+    z-index: 10; /* Para garantir que esta div fique sobreposta ao manifesto */
+    width: 50%; /* Defina a largura desejada */
+    max-width: 380px; /* Define a largura máxima para evitar que a div fique muito grande em telas grandes */
+    height: auto; /* Ou defina uma altura fixa se necessário */
+    margin-top: 20px; /* Ajuste conforme necessário */
+    
+    @media screen and (min-height: 1600px) {
+      top: 20% !important;
+    }
+    @media screen and (max-height: 1400px) {
+      top: 28% !important;
+    }
+    @media screen and (max-height: 1300px) {
+      top: 30% !important;
+    }
     @media screen and (max-height: 1200px) {
       top: 33% !important;
     }
@@ -1614,23 +1418,17 @@ code {
       top: 40% !important;
     }
     @media screen and (max-height: 900px) {
-      top: 55% !important;
-    }
-    @media screen and (max-height: 700px) {
-      top: 50% !important;
+      top: 60% !important;
     }
     @media screen and (max-height: 600px) {
       top: 60% !important;
-    }
-    @media screen and (max-height: 500px) {
-      top: 70% !important;
     }
   }
 }
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .contato-relevo {
     display: none;
   }
@@ -1658,13 +1456,14 @@ code {
   background-color: #bac270;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 5rem;
 }
 
 
 @media screen and (max-width: 1920px) {
   .conheca-nossos-servicos {
     background-color: #bac270;
-    margin-bottom: 15rem !important;
+    margin-bottom: 8rem !important;
     padding-top: 2rem;
     padding-bottom: 0rem;
     margin: 0rem 2rem 4rem 2rem;
@@ -1708,15 +1507,25 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     padding-bottom: 0;
-    text-align: center;
-    padding-left: 7rem;
-  }
+    text-align: start;
+    padding-left: 1rem !important;
+    padding-right: 35rem;
 
-  .custom-button{
-    height: 4.5rem;
   }
 }
 
+
+@media screen and (max-width: 1000px) {
+  .conheca-nossos-servicos {
+    background-color: #bac270;
+    padding-top: 2rem;
+    border-radius: 0 0 10px 10px;
+    font-weight: bolder;
+    padding-left: 0;
+    padding-left: 1rem !important;
+    padding-right: 20rem;
+  }
+}
 
 
 @media screen and (max-width: 900px) {
@@ -1768,7 +1577,7 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     margin-top: 2rem;
-    margin-left: 45rem !important;
+    margin-left: 50rem !important;
   }
 }
 
@@ -1787,7 +1596,7 @@ code {
     border-radius: 0 0 10px 10px;
     font-weight: bolder;
     text-align: center;
-    margin-left: 35rem;
+    margin-left: 23rem !important;
     width: auto;
   }
 }
@@ -1816,16 +1625,24 @@ code {
 
 @media screen and (max-width: 1100px) {
   .botao-conheca-nossos-servicos {
-    margin-left: 1rem !important;
+    margin-left: 7rem !important;
 
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .botao-conheca-nossos-servicos {
+    margin-left: 5rem !important;
   }
 }
 
 @media screen and (max-width: 900px) {
   .botao-conheca-nossos-servicos {
-    margin-left: 17rem !important;
+    margin-left: 2rem !important;
   }
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -1842,7 +1659,7 @@ code {
 
 @media screen and (max-width: 550px) {
   .botao-conheca-nossos-servicos {
-    margin-left: 8rem !important;
+    margin-left: 6rem !important;
   }
 }
 
@@ -1911,11 +1728,7 @@ code {
   }
 
 
-@media screen and (max-width: 600px) {
-  .contato-relevo {
-    display: none;
-  }
-}
+
 
 
 .rodape-manifesto{
